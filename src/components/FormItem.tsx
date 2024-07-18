@@ -46,10 +46,10 @@ export function FormItem(): ReactElement {
       <div className="registration-container">
         <SavedPopUp popUp={popUp} />
         <h1
-          className=" register"
+          className="register"
           style={{ fontSize: "24px", border: "0 transparent" }}
         >
-          Registrering{" "}
+          Registrering
         </h1>
 
         <form className="form" onSubmit={handleOnSubmit}>
@@ -90,7 +90,7 @@ export function FormItem(): ReactElement {
       <div className="flex-container">
         <div>
           <ul>
-            <strong className="smallheading">Tävlingsalternativ:</strong>&nbsp;
+            <strong className="smallheading">Tävlingsalternativ</strong>&nbsp;
             <li className="nowrap">
               <strong className="smallheading">Miniathlon: </strong>&nbsp;4 mil
               cykling, 1 km simning, 1 mil löpning.
@@ -105,7 +105,7 @@ export function FormItem(): ReactElement {
           </ul>
 
           <ul>
-            <strong className="smallheading">Starttider:</strong>&nbsp;
+            <strong className="smallheading">Starttider</strong>&nbsp;
             <li className="nowrap">
               <strong className="smallheading">Simning: </strong>&nbsp; A:
               06:00, B & C: 12:00
@@ -120,7 +120,7 @@ export function FormItem(): ReactElement {
             </li>
           </ul>
           <ul>
-            <strong className="smallheading">Mat och dryck stationer:</strong>
+            <strong className="smallheading">Mat och dryck stationer</strong>
             &nbsp;
             <li className="nowrap">
               <strong className="smallheading">Simning: </strong>&nbsp;Dryck och
@@ -136,7 +136,7 @@ export function FormItem(): ReactElement {
             </li>
           </ul>
           <ul>
-            <strong className="smallheading" style={{ marginTop: "3rem" }}>
+            <strong className="smallheading" style={{ marginTop: "3rem", whiteSpace: "nowrap" }}>
               Voluntärer och logistik:
             </strong>
             &nbsp;

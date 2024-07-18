@@ -241,6 +241,7 @@ textarea:-moz-autofill {
   flex-direction: column;
   margin-top: 3.2rem;
 }
+
 @media screen and (max-width: 900px) {
   .page-container {
     width: 43.8rem;
@@ -322,5 +323,10 @@ textarea:-moz-autofill {
     flex-direction: column;
     gap: 1.25rem;
     margin-inline: 0;
+  }
+}
+@media screen and (max-width: 370px), screen and (max-height: 670px) {
+  .inputs {
+    margin-inline: 0 0.13rem;
   }
 }
