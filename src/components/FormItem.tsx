@@ -26,7 +26,7 @@ export function FormItem(): ReactElement {
     setPopUp(true);
     setTimeout(() => {
       setPopUp(false);
-    }, 2000);
+    }, 1000);
   };
   logSavedUsers();
 
@@ -39,7 +39,7 @@ export function FormItem(): ReactElement {
         erfaren triathlet eller nybörjare, så finns det något för alla i vårt
         spännande evenemang.
       </p>
-      <p className="nowrap" style={{ marginInline: "40px" }}>
+      <p className="nowrap" style={{ marginInline: "1.25rem", transform: "translateY(-1.25rem)"}}>
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
@@ -161,7 +161,7 @@ export function FormItem(): ReactElement {
       </div>
       <div className="flex-container">
         <p className="empathisetext">
-          "Testa din fysiska förmåga på trainos Trainothalon"
+          "Testa din fysiska förmåga på trainos Trainothalon!"
         </p>
 
         <div className="image-container centermobile">

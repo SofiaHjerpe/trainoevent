@@ -10,18 +10,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-inline: 20px;
-  width: 1400px;
+  margin-inline: 1.25rem;
+  width: 87.5rem;
 
   overflow-x: hidden;
 }
 
 .form {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .flex-container {
   display: flex;
-  width: 1400px;
+  width: 87.5rem;
   justify-content: space-between;
 }
 .centermobile {
@@ -33,18 +33,21 @@
   background-image: url(../assets/kett.jpg);
   background-size: contain;
   width: 43rem;
-  transform: translateX(-6.25rem);
   height: 25rem;
+  transform: translateX(-6.25rem);
   background-repeat: no-repeat;
   background-position: center;
 }
 .padding {
-  transform: translateY(-30px);
+  transform: translateY(-1.87rem);
 }
 .regards {
   display: block;
-  width: 164px;
-  margin-inline: 20px;
+  width: 10.25rem;
+  margin-inline: 1.25rem;
+}
+.image:nth-of-type(1) {
+  margin-top: 1.25rem;
 }
 .image {
   display: flex;
@@ -54,12 +57,12 @@
   background-size: contain;
   align-self: flex-end;
   margin-inline: 0;
+  transform: translateX(-3rem);
   background-repeat: no-repeat;
 }
-
 .main-heading {
   color: #8468ea;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   width: 200vw;
   padding-top: 1.25rem;
@@ -76,19 +79,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(-1.25rem);
 }
 .register {
   left: 0;
   transform: translateX(-4rem);
   text-align: left;
   color: #8468ea;
-  margin-inline: 20px;
+  margin-inline: 1.25rem;
 }
 .two {
   background-image: url(../assets/huckster.jpg);
 }
 .smallheading {
-  font-size: 18px;
+  font-size: 1.13rem;
   font-size: 1.25rem;
   font-weight: 700;
   color: #8468ea;
@@ -97,11 +101,11 @@
 
 .text {
   display: flex;
-  margin-inline: 20px;
-  font-size: 18px;
+  margin-inline: 1.25rem;
+  font-size: 1.13rem;
   line-height: 1.7;
   align-self: center;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   list-style: circle;
   flex-direction: column;
 }
@@ -116,29 +120,23 @@ ul {
 
 .nowrap {
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 1.13rem;
   align-self: flex-start;
-  top: -10px;
+  top: -0.6rem;
   justify-self: center;
   line-height: 1.7;
-}
-.width {
-  white-space: normal;
-  inline-size: 450px;
-  overflow-wrap: break-word;
 }
 .inputs {
   display: flex;
   flex: 1;
   flex-direction: column;
-  width: 600px;
+  width: 37.5rem;
   gap: 1.25rem;
   align-self: center;
-  margin-inline: 300px;
+  margin-inline: 18.8rem;
 }
-
 li > .smallheading {
-  font-size: 18px;
+  font-size: 1.13rem;
 }
 textarea {
   display: flex;
@@ -153,8 +151,8 @@ textarea {
   border-radius: 0.4rem;
   outline: none;
   resize: none;
-  border-radius: 12px;
-  margin-inline: 200px 0;
+  border-radius: 0.75rem;
+  margin-inline: 12.5rem 0;
   border: 1px solid #ccc;
   scrollbar-width: thin;
   scrollbar-color: #ccc transparent;
@@ -169,19 +167,16 @@ input[type="text"] {
   background: white;
   padding: 0.8rem 1rem;
   font-size: 1rem;
-
   border-radius: 0.4rem;
   outline: none;
   font-family: "Inter", sans-serif;
   border: 0.0625rem solid #cccccc;
 }
-
 input:focus-visible,
 textarea:focus-visible {
   outline: 0.1875rem solid #8468ea;
   border-color: transparent;
 }
-
 input:-internal-autofill-selected,
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -189,28 +184,26 @@ input:-webkit-autofill:active,
 input:-webkit-autofill:focus {
   color: black !important;
 }
-
 /* Chrome, Edge, and Safari */
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 1.9rem white inset !important;
   /* Adjust the box-shadow color to match your background */
 }
-
 .empathisetext {
   display: flex;
-  margin-top: 200px;
+  margin-top: 14.1rem;
   margin-inline: 1.25rem;
   font-family: "Inter Tight", sans-serif;
   font-style: italic !important;
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 1.13rem;
 }
 
 /* Firefox */
 input:-moz-autofill,
 textarea:-moz-autofill {
-  -moz-box-shadow: 0 0 0 30px white inset !important;
+  -moz-box-shadow: 0 0 0 1.9rem white inset !important;
   /* Adjust the box-shadow color to match your background */
 }
 
@@ -225,19 +218,23 @@ textarea:-moz-autofill {
   font-weight: bold;
   font-family: inherit;
   text-decoration: none;
-  margin: 1.25rem;
-  margin-inline: 830px 0;
-  margin-bottom: 40px;
+  margin: 0.6rem;
+  margin-inline: 52rem 0;
+}
+.width {
+  white-space: nowrap;
+  inline-size: 28.1rem;
+  overflow-wrap: break-word;
 }
 .small {
-  width: 50px;
-  height: 20px;
-  font-size: 10px;
+  width: 3.1rem;
+  height: 1.25rem;
+  font-size: 0.6rem;
 }
 .add {
   font-size: 25px;
-  margin-top: 10px;
-  margin-inline: 0 300px;
+  margin-top: 0.6rem;
+  margin-inline: 0 18.8rem;
 }
 .image-container {
   display: flex;
@@ -246,18 +243,27 @@ textarea:-moz-autofill {
 }
 @media screen and (max-width: 900px) {
   .page-container {
-    width: 700px;
+    width: 43.8rem;
   }
   .flex-container {
     flex-direction: column;
-    width: 500px;
+    width: 13.3rem;
   }
   header {
-    gap: 15px;
+    gap: 1.6rem;
   }
   .image {
     align-self: flex-end;
-    transform: translateX(2.5rem);
+    transform: translateX(18rem);
+  }
+  .image-main {
+    width: 41rem;
+    transform: translateX(-8rem);
+  }
+  .width {
+    white-space: normal;
+    inline-size: 28.1rem;
+    overflow-wrap: break-word;
   }
 
   .centermobile {
@@ -267,7 +273,7 @@ textarea:-moz-autofill {
 
   .empathisetext {
     margin-top: 1.25rem;
-    margin-inline: 2.25rem;
+    margin-inline: 2rem;
   }
   .register {
     transform: translateX(-2rem);
@@ -275,7 +281,7 @@ textarea:-moz-autofill {
   }
   .main-heading {
     color: #8468ea;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     width: 100vw;
     padding-top: 1.25rem;
@@ -288,33 +294,33 @@ textarea:-moz-autofill {
     box-sizing: border-box;
   }
   .small {
-    width: 50px;
-    height: 20px;
-    font-size: 10px;
+    width: 3.1rem;
+    height: 1.25rem;
+    font-size: 0.6rem;
   }
   .addItem {
-    width: 300px;
-    height: 39px;
+    width: 18.8rem;
+    height: 2.4rem;
   }
   textarea {
     margin-inline: 7.5rem 0;
   }
   .text {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .nowrap {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .btn-primary {
     border-radius: 0.4rem;
-    margin-inline: 25rem 0;
+    margin-inline: 25.5rem 0;
     font-size: 1.25rem;
   }
 
   .inputs {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     margin-inline: 0;
   }
 }
