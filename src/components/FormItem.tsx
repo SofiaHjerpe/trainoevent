@@ -197,7 +197,7 @@ export function FormItem(): ReactElement {
         Vänliga hälsningar,{" "}
       </p>
       <p
-        className="nowrap regards padding"
+        className="nowrap regards "
         style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.13rem" }}
       >
         Traino Teamet

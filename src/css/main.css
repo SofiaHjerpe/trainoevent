@@ -38,9 +38,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.padding {
-  transform: translateY(-1.87rem);
-}
+.regards:nth-of-type(2) {
+    transform: translateY(-2.18rem);
+  }
 .regards {
   display: block;
   width: 10.25rem;
@@ -324,6 +324,9 @@ textarea:-moz-autofill {
     gap: 1.25rem;
     margin-inline: 0;
   }
+  .regards:nth-of-type(2) {
+    transform: translateY(-2.18rem);
+  }
 }
 @media screen and (max-width: 370px), screen and (max-height: 670px) {
   .inputs {
@@ -336,8 +339,8 @@ textarea:-moz-autofill {
   textarea {
     margin-inline: 8.5rem 0;
   }
-  .padding {
-    transform: translateY(-1.18rem);
+  .regards:nth-of-type(2) {
+    transform: translateY(-2.18rem);
   }
   .text,
   .nowrap,
