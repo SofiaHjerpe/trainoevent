@@ -35,12 +35,12 @@
   background-position: center;
 }
 .padding {
-    transform: translateY(-30px);
+  transform: translateY(-30px);
 }
 .regards {
-    display: block;
-   width: 164px;
-    margin-inline: 20px;
+  display: block;
+  width: 164px;
+  margin-inline: 20px;
 }
 .image {
   display: flex;
@@ -60,6 +60,7 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   margin: 0 auto;
+  margin-inline: 0;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -73,7 +74,7 @@
   margin-inline: 20px;
 }
 .two {
-    background-image: url(../assets/huckster.jpg);
+  background-image: url(../assets/huckster.jpg);
 }
 .smallheading {
   font-size: 18px;
@@ -230,9 +231,9 @@ textarea:-moz-autofill {
   margin-inline: 0 300px;
 }
 .image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 @media screen and (max-width: 900px) {
   .page-container {
@@ -240,12 +241,11 @@ textarea:-moz-autofill {
   }
   .flex-container {
     flex-direction: column;
-      width: 500px;
+    width: 500px;
   }
   header {
     gap: 15px;
   }
-
 
   .main-heading {
     color: #8468ea;
@@ -256,6 +256,7 @@ textarea:-moz-autofill {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     margin: 0 auto;
+    margin-inline: 165px 0;
     position: relative;
     left: 0%;
     transform: translateX(-50%);

@@ -2,6 +2,7 @@ import { FormEventHandler, ReactElement, useContext, useState } from "react";
 import { FormContext } from "../context/FormContextProvider";
 import { IForm } from "../interfaces";
 import { v4 as uuidv4 } from "uuid";
+import SavedPopUp from "./SavedPopup";
 
 export function FormItem(): ReactElement {
   const { addTodoToList, allPerticipators, logSavedUsers } =
@@ -10,6 +11,7 @@ export function FormItem(): ReactElement {
   const [authorVal, setAuthorValue] = useState("");
   const [email, setEmail] = useState("");
   const [details, setDetails] = useState("");
+  const [popUp, setPopUp] = useState(false);
   const handleOnSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const newItem: IForm = {
@@ -22,8 +24,13 @@ export function FormItem(): ReactElement {
     };
     addTodoToList(newItem);
     setValue("");
+      setPopUp(true);
+      setTimeout(() => {
+        setPopUp(false);
+      }, 2000);
   };
   logSavedUsers();
+
   return (
     <div className="page-container">
       <h1 className="main-heading">TRAINO TRIATHON </h1>
@@ -124,12 +131,14 @@ export function FormItem(): ReactElement {
           <span className="image-main"></span>
         </div>
         <div className="registration-container">
+          <SavedPopUp popUp={popUp} />
           <h1
             className=" register"
             style={{ fontSize: "24px", border: "0 transparent" }}
           >
             Registrering{" "}
           </h1>
+
           <form className="form" onSubmit={handleOnSubmit}>
             <div className="inputs">
               <input
@@ -156,7 +165,11 @@ export function FormItem(): ReactElement {
                 placeholder="Övrig information"
               ></textarea>
             </div>
-            <button type="submit" className="btn-primary">
+            <button
+              type="submit"
+              className="btn-primary"
+              onClick={() => handleOnSubmit}
+            >
               Spara
             </button>
           </form>
