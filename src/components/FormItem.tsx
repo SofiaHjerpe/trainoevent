@@ -32,6 +32,19 @@ export function FormItem(): ReactElement {
 
   return (
     <div className="page-container">
+      <div className="video">
+        <video width="100%" height="100%" autoPlay muted loop playsInline>
+          <source
+            src="https://traino.nu/app/assets/bg800.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://traino.nu/app/assets/bg800.webp"
+            type="video/webp"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <h1 className="main-heading">TRAINO TRIATHON </h1>
       <p className="text">
         Hej alla tränare och träningsentusiaster! Vi är glada att kunna välkomna
@@ -46,119 +59,50 @@ export function FormItem(): ReactElement {
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
-      <div className="registration-container">
-        <SavedPopUp popUp={popUp} />
-        <h1
-          className="register"
-          style={{ fontSize: "24px", border: "0 transparent" }}
-        >
-          Registrering
-        </h1>
-
-        <form className="form" onSubmit={handleOnSubmit}>
-          <div className="inputs">
-            <input
-              onChange={(event) => setValue(event.target.value)}
-              className="author"
-              type="text"
-              placeholder="Förnamn"
-            />
-            <input
-              onChange={(event) => setAuthorValue(event.target.value)}
-              className=" author"
-              type="text"
-              placeholder="Efternamn"
-            />
-            <input
-              onChange={(event) => setEmail(event.target.value)}
-              className="author"
-              type="text"
-              placeholder="Email"
-            />
-            <textarea
-              onChange={(event) => setDetails(event.target.value)}
-              className="addItem author"
-              placeholder="Övrig information"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="btn-primary"
-            onClick={() => handleOnSubmit}
-          >
-            Spara
-          </button>
-        </form>
-      </div>
       <div className="flex-container">
-        <div>
-          <ul>
-            <strong className="smallheading">Tävlingsalternativ</strong>&nbsp;
-            <li className="nowrap">
-              <strong className="smallheading">Miniathlon: </strong>&nbsp;4 mil
-              cykling, 1 km simning, 1 mil löpning.
-            </li>
-            <li className="nowrap">
-              <strong className="smallheading">Athlon:</strong>&nbsp; 3 km
-              simning, 17 mil cykling, 43 km löpning.{" "}
-            </li>
-            <li className="nowrap">
-              Möjlighet att delta i en enskild gren för de som föredrar det.
-            </li>
-          </ul>
+        <div className="registration-container">
+          <SavedPopUp popUp={popUp} />
+          <h1
+            className="register"
+            style={{ fontSize: "24px", border: "0 transparent" }}
+          >
+            Registrering
+          </h1>
 
-          <ul>
-            <strong className="smallheading">Starttider</strong>&nbsp;
-            <li className="nowrap">
-              <strong className="smallheading">Simning: </strong>&nbsp; A:
-              06:00, B & C: 12:00
-            </li>
-            <li className="nowrap">
-              <strong className="smallheading">Cykling:</strong>&nbsp; A: 06:30
-              - 08:00, B: 12:30 - 14:00, D: 13:00{" "}
-            </li>
-            <li className="nowrap">
-              <strong className="smallheading">Löpning:</strong>&nbsp; A: 13:00
-              - 17:00, B: 14:30 - 16:00, E: 16:00
-            </li>
-          </ul>
-          <ul>
-            <strong className="smallheading">Mat och dryck stationer</strong>
-            &nbsp;
-            <li className="nowrap">
-              <strong className="smallheading">Simning: </strong>&nbsp;Dryck och
-              bars vid målgång
-            </li>
-            <li className="nowrap">
-              <strong className="smallheading">Cykling:</strong>&nbsp;Första
-              stationen efter 2 mil, därefter varje 4 mil.
-            </li>
-            <li className="nowrap">
-              <strong className="smallheading">Löpning:</strong>&nbsp;Varje mil
-              (1, 2, 3) och vid målet.
-            </li>
-          </ul>
-          <ul>
-            <strong
-              className="smallheading"
-              style={{ marginTop: "3rem", whiteSpace: "nowrap" }}
+          <form className="form" onSubmit={handleOnSubmit}>
+            <div className="inputs">
+              <input
+                onChange={(event) => setValue(event.target.value)}
+                className="author"
+                type="text"
+                placeholder="Förnamn"
+              />
+              <input
+                onChange={(event) => setAuthorValue(event.target.value)}
+                className=" author"
+                type="text"
+                placeholder="Efternamn"
+              />
+              <input
+                onChange={(event) => setEmail(event.target.value)}
+                className="author"
+                type="text"
+                placeholder="Email"
+              />
+              <textarea
+                onChange={(event) => setDetails(event.target.value)}
+                className="addItem author"
+                placeholder="Övrig information"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="btn-primary"
+              onClick={() => handleOnSubmit}
             >
-              Voluntärer och logistik
-            </strong>
-            &nbsp;
-            <li className="nowrap width">
-              Vi har 10 volontärer vid matstationer och 4 som kör bilar för att
-              hämta upp de som ger upp.
-            </li>
-            <li className="nowrap">
-              4 volontärer kommer att finnas på båtar för att assistera under
-              simningen.
-            </li>
-            <li className="nowrap">
-              Vi tillhandahåller armband/nummerlappar och påsar för att förvara
-              deltagarnas saker.
-            </li>
-          </ul>
+              Spara
+            </button>
+          </form>
         </div>
         <div className="image-container">
           <span className="image"></span>
@@ -167,7 +111,7 @@ export function FormItem(): ReactElement {
       </div>
       <div className="flex-container">
         <p className="empathisetext">
-          "Testa din fysiska förmåga på trainos Trainothalon!"
+          "Testa din fysiska förmåga på Traino Triathalon!"
         </p>
 
         <div className="image-container centermobile">
@@ -180,11 +124,8 @@ export function FormItem(): ReactElement {
           ></span>
         </div>
       </div>
-      <strong
-        className="smallheading"
-        style={{marginInline: "1.25rem"}}
-      >
-       Sponsorer
+      <strong className="smallheading" style={{ marginInline: "1.25rem" }}>
+        Sponsorer
       </strong>
       <p className="text">
         <em style={{ marginBottom: "1.25rem" }}>
@@ -192,6 +133,7 @@ export function FormItem(): ReactElement {
           detta fantastiska evenemang. Kontakta oss för mer information om hur
           ditt företag kan bidra och synas i samband med Traino Triathlon 2025.
         </em>
+        <strong className="smallheading">Traino Triathlon 2025</strong>
         Vi ser fram emot att se er där och hoppas på en dag fylld av utmaningar,
         gemenskap och glädje. Låt oss göra Traino Triathlon 2025 till ett
         minnesvärt evenemang!
