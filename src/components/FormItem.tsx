@@ -39,7 +39,10 @@ export function FormItem(): ReactElement {
         erfaren triathlet eller nybörjare, så finns det något för alla i vårt
         spännande evenemang.
       </p>
-      <p className="nowrap" style={{ marginInline: "1.25rem", transform: "translateY(-1.25rem)"}}>
+      <p
+        className="nowrap"
+        style={{ marginInline: "1.25rem", transform: "translateY(-1.25rem)" }}
+      >
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
@@ -136,7 +139,10 @@ export function FormItem(): ReactElement {
             </li>
           </ul>
           <ul>
-            <strong className="smallheading" style={{ marginTop: "3rem", whiteSpace: "nowrap" }}>
+            <strong
+              className="smallheading"
+              style={{ marginTop: "3rem", whiteSpace: "nowrap" }}
+            >
               Voluntärer och logistik:
             </strong>
             &nbsp;
@@ -184,8 +190,18 @@ export function FormItem(): ReactElement {
         gemenskap och glädje. Låt oss göra Traino Triathlon 2025 till ett
         minnesvärt evenemang!
       </p>
-      <p className="nowrap regards">Vänliga hälsningar, </p>
-      <p className="nowrap regards padding ">Traino Teamet</p>
+      <p
+        className="nowrap regards"
+        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1rem" }}
+      >
+        Vänliga hälsningar,{" "}
+      </p>
+      <p
+        className="nowrap regards padding"
+        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1rem" }}
+      >
+        Traino Teamet
+      </p>
     </div>
   );
 }
