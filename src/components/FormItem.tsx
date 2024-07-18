@@ -5,8 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import SavedPopUp from "./SavedPopup";
 
 export function FormItem(): ReactElement {
-  const { addTodoToList, logSavedUsers } =
-    useContext(FormContext);
+  const { addTodoToList, logSavedUsers } = useContext(FormContext);
   const [value, setValue] = useState("");
   const [authorVal, setAuthorValue] = useState("");
   const [email, setEmail] = useState("");
@@ -24,10 +23,10 @@ export function FormItem(): ReactElement {
     };
     addTodoToList(newItem);
     setValue("");
-      setPopUp(true);
-      setTimeout(() => {
-        setPopUp(false);
-      }, 2000);
+    setPopUp(true);
+    setTimeout(() => {
+      setPopUp(false);
+    }, 2000);
   };
   logSavedUsers();
 
@@ -137,9 +136,11 @@ export function FormItem(): ReactElement {
             </li>
           </ul>
           <ul>
-            <strong className="smallheading" style={{marginTop: "3rem"}}>Voluntärer och logistik:</strong>
+            <strong className="smallheading" style={{ marginTop: "3rem" }}>
+              Voluntärer och logistik:
+            </strong>
             &nbsp;
-            <li className="nowrap">
+            <li className="nowrap width">
               Vi har 10 volontärer vid matstationer och 4 som kör bilar för att
               hämta upp de som ger upp.
             </li>
@@ -158,6 +159,21 @@ export function FormItem(): ReactElement {
           <span className="image two"></span>
         </div>
       </div>
+      <div className="flex-container">
+        <p className="empathisetext">
+          "Testa din fysiska förmåga på trainos Trainothalon"
+        </p>
+
+        <div className="image-container centermobile">
+          <span
+            className="image-main"
+            style={{
+              transform: "translateY(-0.25rem)",
+              marginBottom: "1.25rem",
+            }}
+          ></span>
+        </div>
+      </div>
       <p className="text">
         <em style={{ marginBottom: "1.25rem" }}>
           Vi erbjuder också företagspaket för sponsorer som vill vara en del av
@@ -170,11 +186,6 @@ export function FormItem(): ReactElement {
       </p>
       <p className="nowrap regards">Vänliga hälsningar, </p>
       <p className="nowrap regards padding ">Traino Teamet</p>
-      <div className="flex-container">
-        <div className="image-container centermobile" >
-          <span className="image-main" style={{transform: "translateY(-2.25rem)"}} ></span>
-        </div>
-      </div>
     </div>
   );
 }

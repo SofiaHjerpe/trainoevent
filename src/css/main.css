@@ -25,14 +25,15 @@
   justify-content: space-between;
 }
 .centermobile {
-    margin-top: 0;
-    margin-inline: 350px;
+  margin-top: 0;
+  margin-inline: 0.25rem;
 }
 .image-main {
   display: flex;
   background-image: url(../assets/kett.jpg);
   background-size: contain;
-  width: 45rem;
+  width: 43rem;
+  transform: translateX(-6.25rem);
   height: 25rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,6 +53,7 @@
   background-image: url(../assets/swimming.jpg);
   background-size: contain;
   align-self: flex-end;
+  margin-inline: 0;
   background-repeat: no-repeat;
 }
 
@@ -103,6 +105,7 @@
   list-style: circle;
   flex-direction: column;
 }
+
 ul {
   display: flex;
   flex-direction: column;
@@ -112,8 +115,6 @@ ul {
 }
 
 .nowrap {
-  flex-direction: row;
-  flex-flow: nowrap;
   white-space: nowrap;
   font-size: 18px;
   align-self: flex-start;
@@ -121,7 +122,11 @@ ul {
   justify-self: center;
   line-height: 1.7;
 }
-
+.width {
+  white-space: normal;
+  inline-size: 450px;
+  overflow-wrap: break-word;
+}
 .inputs {
   display: flex;
   flex: 1;
@@ -192,6 +197,16 @@ textarea:-webkit-autofill {
   /* Adjust the box-shadow color to match your background */
 }
 
+.empathisetext {
+  display: flex;
+  margin-top: 200px;
+  margin-inline: 1.25rem;
+  font-family: "Inter Tight", sans-serif;
+  font-style: italic !important;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
 /* Firefox */
 input:-moz-autofill,
 textarea:-moz-autofill {
@@ -240,10 +255,20 @@ textarea:-moz-autofill {
   header {
     gap: 15px;
   }
+  .image {
+    align-self: flex-end;
+    transform: translateX(2.5rem);
+  }
+
   .centermobile {
     margin-top: 0;
     margin-inline: 0;
-}
+  }
+
+  .empathisetext {
+    margin-top: 1.25rem;
+    margin-inline: 2.25rem;
+  }
   .register {
     transform: translateX(-2rem);
     margin-inline: 0;
