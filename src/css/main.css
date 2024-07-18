@@ -329,4 +329,8 @@ textarea:-moz-autofill {
   .inputs {
     margin-inline: 0 0.13rem;
   }
+  .regards {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+  }
 }
