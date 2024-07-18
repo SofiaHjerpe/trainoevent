@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import SavedPopUp from "./SavedPopup";
 
 export function FormItem(): ReactElement {
-  const { addTodoToList, allPerticipators, logSavedUsers } =
+  const { addTodoToList, logSavedUsers } =
     useContext(FormContext);
   const [value, setValue] = useState("");
   const [authorVal, setAuthorValue] = useState("");

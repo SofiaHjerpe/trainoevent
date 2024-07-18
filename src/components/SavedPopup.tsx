@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/SavedPopup.css";
 
 const SavedPopUp = ({ popUp }: {popUp : Boolean}) => {
