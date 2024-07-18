@@ -143,7 +143,7 @@ export function FormItem(): ReactElement {
               className="smallheading"
               style={{ marginTop: "3rem", whiteSpace: "nowrap" }}
             >
-              Voluntärer och logistik:
+              Voluntärer och logistik
             </strong>
             &nbsp;
             <li className="nowrap width">
@@ -180,6 +180,12 @@ export function FormItem(): ReactElement {
           ></span>
         </div>
       </div>
+      <strong
+        className="smallheading"
+        style={{marginInline: "1.25rem"}}
+      >
+       Sponsorer
+      </strong>
       <p className="text">
         <em style={{ marginBottom: "1.25rem" }}>
           Vi erbjuder också företagspaket för sponsorer som vill vara en del av
