@@ -255,7 +255,7 @@ textarea:-moz-autofill {
   }
   .image {
     align-self: flex-end;
-    transform: translateX(18rem);
+    transform: translateX(20rem);
   }
   .image-main {
     width: 41rem;
@@ -327,8 +327,16 @@ textarea:-moz-autofill {
 }
 @media screen and (max-width: 370px), screen and (max-height: 670px) {
   .inputs {
-    margin-inline: 0 0.13rem;
+    margin-inline: 1rem;
   }
+   .btn-primary {
+    margin-inline: 26.7rem 0;
+  }
+
+  textarea {
+    margin-inline: 8.5rem 0;
+  }
+
   .regards {
     font-size: 1rem;
     font-family: "Inter", sans-serif;
