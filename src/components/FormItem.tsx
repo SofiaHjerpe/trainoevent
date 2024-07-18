@@ -192,13 +192,13 @@ export function FormItem(): ReactElement {
       </p>
       <p
         className="nowrap regards"
-        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1rem" }}
+        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.13rem" }}
       >
         Vänliga hälsningar,{" "}
       </p>
       <p
         className="nowrap regards padding"
-        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1rem" }}
+        style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.13rem" }}
       >
         Traino Teamet
       </p>
