@@ -39,7 +39,6 @@ export function FormItem(): ReactElement {
           autoPlay={true}
           muted={true}
           loop={true}
-          controls={false}
           playsInline={true}
         >
           <source
