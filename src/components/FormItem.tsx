@@ -33,7 +33,15 @@ export function FormItem(): ReactElement {
   return (
     <div className="page-container">
       <div className="video">
-        <video width="100%" height="100%" autoPlay muted loop playsInline>
+        <video
+          width="100%"
+          height="100%"
+          autoPlay={true}
+          muted={true}
+          loop={true}
+          controls={false}
+          playsInline={true}
+        >
           <source
             src="https://traino.nu/app/assets/bg800.mp4"
             type="video/mp4"
@@ -71,18 +79,20 @@ export function FormItem(): ReactElement {
 
           <form className="form" onSubmit={handleOnSubmit}>
             <div className="inputs">
-              <input
-                onChange={(event) => setValue(event.target.value)}
-                className="author"
-                type="text"
-                placeholder="Förnamn"
-              />
-              <input
-                onChange={(event) => setAuthorValue(event.target.value)}
-                className=" author"
-                type="text"
-                placeholder="Efternamn"
-              />
+              <div className="row-inputs" style={{ display: "flex", gap: "1.25rem" }}>
+                <input
+                  onChange={(event) => setValue(event.target.value)}
+                  className="author"
+                  type="text"
+                  placeholder="Förnamn"
+                />
+                <input
+                  onChange={(event) => setAuthorValue(event.target.value)}
+                  className=" author"
+                  type="text"
+                  placeholder="Efternamn"
+                />
+              </div>
               <input
                 onChange={(event) => setEmail(event.target.value)}
                 className="author"

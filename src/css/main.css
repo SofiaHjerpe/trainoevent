@@ -177,6 +177,9 @@ textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1.9rem white inset !important;
   /* Adjust the box-shadow color to match your background */
 }
+.row-inputs {
+    margin-inline: 10rem 0;
+}
 .empathisetext {
   display: flex;
   margin-top: 1.25rem;
