@@ -337,12 +337,15 @@ textarea:-moz-autofill {
     margin-inline: 8.5rem 0;
   }
   .padding {
-    transform: translateY(0);
+    transform: translateY(-1.18rem);
   }
   .text,
   .nowrap,
   .regards {
     font-size: 1rem;
     font-family: "Inter", sans-serif;
+  }
+  .regards {
+    font-size: 1.13rem;
   }
 }
