@@ -198,12 +198,10 @@ textarea:-webkit-autofill {
   white-space: nowrap;
   font-size: 1.13rem;
 }
- .regards:nth-of-type(1) {
-    transform: translateY(0);
-  }
-  .regards {
-    transform: translateY(-2rem);
-  }
+
+.padding {
+  transform: translateY(-2rem);
+}
 
 /* Firefox */
 input:-moz-autofill,
@@ -231,7 +229,6 @@ textarea:-moz-autofill {
   inline-size: 28.1rem;
   overflow-wrap: break-word;
 }
-
 .add {
   font-size: 25px;
   margin-top: 0.6rem;
@@ -251,6 +248,7 @@ textarea:-moz-autofill {
     flex-direction: column;
     width: 13.3rem;
   }
+ 
   header {
     gap: 1.6rem;
   }
@@ -328,13 +326,10 @@ textarea:-moz-autofill {
     gap: 1.25rem;
     margin-inline: 0;
   }
-   .regards:nth-of-type(1) {
-    transform: translateY(0);
-  }
-  .regards {
+  
+  .padding {
     transform: translateY(-2rem);
   }
- 
 }
 @media screen and (max-width: 370px), screen and (max-height: 670px) {
   .inputs {
@@ -347,10 +342,7 @@ textarea:-moz-autofill {
   textarea {
     margin-inline: 8.5rem 0;
   }
-  .regards:nth-of-type(1) {
-    transform: translateY(0);
-  }
-  .regards {
+   .padding {
     transform: translateY(-2rem);
   }
   .text,
