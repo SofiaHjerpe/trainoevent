@@ -1,7 +1,15 @@
-import { FormEventHandler, ReactElement, useContext, useState } from "react";
+import {
+  FormEventHandler,
+  MutableRefObject,
+  ReactElement,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { FormContext } from "../context/FormContextProvider";
 import { IForm } from "../interfaces";
 import { v4 as uuidv4 } from "uuid";
+import { useRef, useCallback } from "react";
 import SavedPopUp from "./SavedPopup";
 
 export function FormItem(): ReactElement {
@@ -11,6 +19,7 @@ export function FormItem(): ReactElement {
   const [email, setEmail] = useState("");
   const [details, setDetails] = useState("");
   const [popUp, setPopUp] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const handleOnSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const newItem: IForm = {
@@ -30,14 +39,26 @@ export function FormItem(): ReactElement {
   };
   logSavedUsers();
 
+  const playerRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!playerRef.current.play()) {
+      playerRef.current.play();
+    }
+     playerRef.current.play();
+
+  }, []);
+ 
   return (
     <div className="page-container">
       <div className="video">
         <video
           width="100%"
           height="100%"
+          ref={playerRef}
           autoPlay={true}
           muted={true}
+          onPause={() => setIsPlaying(true)}
           loop={true}
           playsInline={true}
         >
@@ -78,7 +99,10 @@ export function FormItem(): ReactElement {
 
           <form className="form" onSubmit={handleOnSubmit}>
             <div className="inputs">
-              <div className="row-inputs" style={{ display: "flex", gap: "1.25rem" }}>
+              <div
+                className="row-inputs"
+                style={{ display: "flex", gap: "1.25rem" }}
+              >
                 <input
                   onChange={(event) => setValue(event.target.value)}
                   className="author"
