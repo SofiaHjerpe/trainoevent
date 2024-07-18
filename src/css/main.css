@@ -26,17 +26,7 @@
   margin-top: 0;
   margin-inline: 0.25rem;
 }
-.image-main {
-  display: flex;
-  background-image: url(../assets/kett.jpg);
-  background-size: contain;
-  width: 43rem;
-  height: 25rem;
-  transform: translateX(-6.25rem);
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 999;
-}
+
 .regards:nth-of-type(2) {
   transform: translateY(-2.18rem);
 }
@@ -47,20 +37,7 @@
   color: #fff;
   z-index: 999;
 }
-.image:nth-of-type(1) {
-  margin-top: 1.25rem;
-}
-.image {
-  display: flex;
-  width: 18rem;
-  height: 8rem;
-  background-image: url(../assets/swimming.jpg);
-  background-size: contain;
-  align-self: flex-end;
-  margin-inline: 0;
-  transform: translateX(-3rem);
-  background-repeat: no-repeat;
-}
+
 .main-heading {
   color: #8468ea;
   font-size: 2rem;
@@ -93,9 +70,7 @@
   margin-inline: 1.25rem;
   z-index: 999;
 }
-.two {
-  background-image: url(../assets/huckster.jpg);
-}
+
 .smallheading {
   font-size: 1.13rem;
   font-size: 1.25rem;
@@ -204,7 +179,7 @@ textarea:-webkit-autofill {
 }
 .empathisetext {
   display: flex;
-  margin-top: 14.1rem;
+  margin-top: 1.25rem;
   margin-inline: 1.25rem;
   font-family: "Inter Tight", sans-serif;
   font-style: italic !important;
@@ -264,14 +239,6 @@ textarea:-moz-autofill {
   margin-top: 0.6rem;
   margin-inline: 0 18.8rem;
 }
-.image-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.2rem;
-  gap: 1.25rem;
-  color: #fff;
-  z-index: 999;
-}
 
 @media screen and (max-width: 900px) {
   .page-container {
@@ -294,14 +261,8 @@ textarea:-moz-autofill {
   .nowrap {
     font-size: 1rem;
   }
-  .image {
-    align-self: flex-end;
-    transform: translateX(20rem);
-  }
-  .image-main {
-    width: 41rem;
-    transform: translateX(-8rem);
-  }
+ 
+  
   .width {
     white-space: normal;
     inline-size: 28.1rem;

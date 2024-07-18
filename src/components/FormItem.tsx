@@ -104,25 +104,11 @@ export function FormItem(): ReactElement {
             </button>
           </form>
         </div>
-        <div className="image-container">
-          <span className="image"></span>
-          <span className="image two"></span>
-        </div>
       </div>
       <div className="flex-container">
         <p className="empathisetext">
           "Testa din fysiska förmåga på Traino Triathalon!"
         </p>
-
-        <div className="image-container centermobile">
-          <span
-            className="image-main"
-            style={{
-              transform: "translateY(-0.25rem)",
-              marginBottom: "1.25rem",
-            }}
-          ></span>
-        </div>
       </div>
       <strong className="smallheading" style={{ marginInline: "1.25rem" }}>
         Sponsorer
