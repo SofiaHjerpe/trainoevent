@@ -44,6 +44,50 @@ export function FormItem(): ReactElement {
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
+      <div className="registration-container">
+        <SavedPopUp popUp={popUp} />
+        <h1
+          className=" register"
+          style={{ fontSize: "24px", border: "0 transparent" }}
+        >
+          Registrering{" "}
+        </h1>
+
+        <form className="form" onSubmit={handleOnSubmit}>
+          <div className="inputs">
+            <input
+              onChange={(event) => setValue(event.target.value)}
+              className="author"
+              type="text"
+              placeholder="Förnamn"
+            />
+            <input
+              onChange={(event) => setAuthorValue(event.target.value)}
+              className=" author"
+              type="text"
+              placeholder="Efternamn"
+            />
+            <input
+              onChange={(event) => setEmail(event.target.value)}
+              className="author"
+              type="text"
+              placeholder="Email"
+            />
+            <textarea
+              onChange={(event) => setDetails(event.target.value)}
+              className="addItem author"
+              placeholder="Övrig information"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="btn-primary"
+            onClick={() => handleOnSubmit}
+          >
+            Spara
+          </button>
+        </form>
+      </div>
       <div className="flex-container">
         <div>
           <ul>
@@ -93,7 +137,7 @@ export function FormItem(): ReactElement {
             </li>
           </ul>
           <ul>
-            <strong className="smallheading">Voluntärer och logistik:</strong>
+            <strong className="smallheading" style={{marginTop: "3rem"}}>Voluntärer och logistik:</strong>
             &nbsp;
             <li className="nowrap">
               Vi har 10 volontärer vid matstationer och 4 som kör bilar för att
@@ -127,52 +171,8 @@ export function FormItem(): ReactElement {
       <p className="nowrap regards">Vänliga hälsningar, </p>
       <p className="nowrap regards padding ">Traino Teamet</p>
       <div className="flex-container">
-        <div className="image-container">
-          <span className="image-main"></span>
-        </div>
-        <div className="registration-container">
-          <SavedPopUp popUp={popUp} />
-          <h1
-            className=" register"
-            style={{ fontSize: "24px", border: "0 transparent" }}
-          >
-            Registrering{" "}
-          </h1>
-
-          <form className="form" onSubmit={handleOnSubmit}>
-            <div className="inputs">
-              <input
-                onChange={(event) => setValue(event.target.value)}
-                className="author"
-                type="text"
-                placeholder="Förnamn"
-              />
-              <input
-                onChange={(event) => setAuthorValue(event.target.value)}
-                className=" author"
-                type="text"
-                placeholder="Efternamn"
-              />
-              <input
-                onChange={(event) => setEmail(event.target.value)}
-                className="author"
-                type="text"
-                placeholder="Email"
-              />
-              <textarea
-                onChange={(event) => setDetails(event.target.value)}
-                className="addItem author"
-                placeholder="Övrig information"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn-primary"
-              onClick={() => handleOnSubmit}
-            >
-              Spara
-            </button>
-          </form>
+        <div className="image-container centermobile" >
+          <span className="image-main" style={{transform: "translateY(-2.25rem)"}} ></span>
         </div>
       </div>
     </div>
