@@ -33,6 +33,7 @@
 .regards {
   display: block;
   width: 10.25rem;
+  font-size: 18px;
   margin-inline: 1.25rem;
   color: #fff;
   z-index: 999;
@@ -64,6 +65,8 @@
 }
 .register {
   left: 0;
+  font-size: 24px;
+  border: 0 transparent;
   transform: translateX(-4rem);
   text-align: left;
   color: #8468ea;
@@ -260,6 +263,12 @@ textarea:-moz-autofill {
   margin-top: 0.6rem;
   margin-inline: 0 18.8rem;
 }
+.trainotria {
+  margin-inline: 3.9rem;
+}
+.sponsor {
+  margin-inline: 5.1rem;
+}
 
 @media screen and (max-width: 900px) {
   .page-container {
@@ -273,6 +282,7 @@ textarea:-moz-autofill {
     margin-inline: 11.7rem;
     font-size: 24px;
   }
+ 
   .flex-container {
     flex-direction: column;
     width: 13.3rem;
@@ -312,9 +322,18 @@ textarea:-moz-autofill {
     z-index: 999;
   }
   .register {
+    font-size: 24px;
+    border: 0 transparent;
     transform: translateX(10rem);
     margin-inline: 0;
   }
+   .trainotria {
+  transform: translateX(0);
+  }
+   .sponsor {
+  transform: translateX(1.25rem);
+}
+
   .main-heading {
     color: #8468ea;
     font-size: 2rem;
@@ -347,7 +366,7 @@ textarea:-moz-autofill {
     margin-inline: 50rem 0;
     font-size: 1.13rem;
   }
-
+ 
   .inputs {
     display: flex;
     flex-direction: column;
@@ -380,7 +399,9 @@ textarea:-moz-autofill {
     display: none;
     transform: translateY(-26.3rem);
   }
-
+.regards {
+  font-size: 1rem;
+}
   .text,
   .nowrap,
   .regards {

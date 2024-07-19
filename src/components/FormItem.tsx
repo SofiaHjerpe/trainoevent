@@ -48,12 +48,10 @@ export function FormItem(): ReactElement {
 
   return (
     <div className="page-container">
-      <Video playerRef={playerRef} />
-      
-        {" "}
-        <span className="logo"></span>
-        <strong className="smallheading slogan">Hitta din personliga tränare</strong>
-
+      <Video playerRef={playerRef} /> <span className="logo"></span>
+      <strong className="smallheading slogan">
+        Hitta din personliga tränare
+      </strong>
       <p className="text" style={{ marginTop: "-10rem" }}>
         Hej alla tränare och träningsentusiaster! Vi är glada att kunna välkomna
         er till Traino Triathlon den 16 augusti 2025. Oavsett om du är en
@@ -64,16 +62,10 @@ export function FormItem(): ReactElement {
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
-
       <div className="flex-container">
         <div className="registration-container">
           <SavedPopUp popUp={popUp} />
-          <h1
-            className="register"
-            style={{ fontSize: "24px", border: "0 transparent" }}
-          >
-            Registrering
-          </h1>
+          <h1 className="register">Registrering</h1>
 
           <form className="form" onSubmit={handleOnSubmit}>
             <div className="inputs">
@@ -121,7 +113,7 @@ export function FormItem(): ReactElement {
           "Testa din fysiska förmåga på Traino Triathalon!"
         </p>
       </div>
-      <strong className="smallheading" style={{ marginInline: "1.25rem" }}>
+      <strong className="register sponsor" >
         Sponsorer
       </strong>
       <p className="text">
@@ -130,7 +122,9 @@ export function FormItem(): ReactElement {
           detta fantastiska evenemang. Kontakta oss för mer information om hur
           ditt företag kan bidra och synas i samband med Traino Triathlon 2025.
         </em>
-        <strong className="smallheading">Traino Triathlon 2025</strong>
+        <strong className="register trainotria">
+          Traino Triathlon 2025
+        </strong>
         Vi ser fram emot att se er där och hoppas på en dag fylld av utmaningar,
         gemenskap och glädje. Låt oss göra Traino Triathlon 2025 till ett
         minnesvärt evenemang!
@@ -142,7 +136,7 @@ export function FormItem(): ReactElement {
         Vänliga hälsningar,{" "}
       </p>
       <p
-        className="nowrap regards padding "
+        className="regards padding "
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
         Traino Teamet
