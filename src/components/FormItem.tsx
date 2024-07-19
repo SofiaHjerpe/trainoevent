@@ -1,6 +1,5 @@
 import {
   FormEventHandler,
-  MutableRefObject,
   ReactElement,
   useContext,
   useEffect,
@@ -9,7 +8,7 @@ import {
 import { FormContext } from "../context/FormContextProvider";
 import { IForm } from "../interfaces";
 import { v4 as uuidv4 } from "uuid";
-import { useRef, useCallback } from "react";
+import { useRef } from "react";
 import SavedPopUp from "./SavedPopup";
 import Video from "./Video";
 
