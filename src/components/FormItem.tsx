@@ -48,21 +48,23 @@ export function FormItem(): ReactElement {
 
   return (
     <div className="page-container">
-      <Video playerRef={playerRef} /> 
-      <h1 className="main-heading">TRAINO TRIATHON </h1>
-      <p className="text">
+      <Video playerRef={playerRef} />
+      
+        {" "}
+        <span className="logo"></span>
+        <strong className="smallheading slogan">Hitta din personliga tränare</strong>
+
+      <p className="text" style={{ marginTop: "-8rem" }}>
         Hej alla tränare och träningsentusiaster! Vi är glada att kunna välkomna
         er till Traino Triathlon den 16 augusti 2025. Oavsett om du är en
         erfaren triathlet eller nybörjare, så finns det något för alla i vårt
         spännande evenemang.
       </p>
-      <p
-        className="nowrap"
-        style={{ marginInline: "1.25rem", transform: "translateY(-1.25rem)" }}
-      >
+      <p className="nowrap" style={{ marginInline: "1.25rem" }}>
         <strong className="smallheading">Datum: </strong>&nbsp; 16 augusti 2025
         (lördag)
       </p>
+
       <div className="flex-container">
         <div className="registration-container">
           <SavedPopUp popUp={popUp} />

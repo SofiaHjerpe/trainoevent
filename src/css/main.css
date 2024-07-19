@@ -171,6 +171,12 @@ input:-webkit-autofill:active,
 input:-webkit-autofill:focus {
   color: black !important;
 }
+.slogan {
+  position: absolute;
+  transform: translateY(-26rem);
+  margin-inline: 33.5rem;
+  font-size: 24px;
+}
 /* Chrome, Edge, and Safari */
 input:-webkit-autofill,
 textarea:-webkit-autofill {
@@ -178,7 +184,7 @@ textarea:-webkit-autofill {
   /* Adjust the box-shadow color to match your background */
 }
 .row-inputs {
-    margin-inline: 10rem 0;
+  margin-inline: 10rem 0;
 }
 .empathisetext {
   display: flex;
@@ -194,7 +200,7 @@ textarea:-webkit-autofill {
 .page-container .video {
   top: 0;
   left: 0;
-  filter: brightness(50%);
+  filter: brightness(90%);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -217,7 +223,18 @@ textarea:-moz-autofill {
   -moz-box-shadow: 0 0 0 1.9rem white inset !important;
   /* Adjust the box-shadow color to match your background */
 }
-
+.logo {
+  display: flex;
+  background-image: url(../assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+  margin-top: 6.25rem;
+  width: 22rem;
+  height: 20rem;
+  align-self: center;
+  justify-self: center;
+}
 /* Global button styles */
 .btn-primary {
   border: none;
@@ -247,6 +264,13 @@ textarea:-moz-autofill {
   .page-container {
     width: 43.8rem;
   }
+  .slogan {
+  position: absolute;
+  white-space: nowrap;
+  transform: translateY(-26rem);
+  margin-inline: 12rem;
+  font-size: 24px;
+}
   .flex-container {
     flex-direction: column;
     width: 13.3rem;
@@ -264,10 +288,10 @@ textarea:-moz-autofill {
   .nowrap {
     font-size: 1rem;
   }
- .row-inputs {
+  .row-inputs {
     margin-inline: 12.2rem 0;
-}
-  
+  }
+
   .width {
     white-space: normal;
     inline-size: 28.1rem;
@@ -347,9 +371,9 @@ textarea:-moz-autofill {
   .padding {
     transform: translateY(-2rem);
   }
-   .row-inputs {
+  .row-inputs {
     margin-inline: 12.7rem 0;
-   }
+  }
   .text,
   .nowrap,
   .regards {
