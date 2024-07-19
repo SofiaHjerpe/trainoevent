@@ -173,8 +173,8 @@ input:-webkit-autofill:focus {
 }
 .slogan {
   position: absolute;
-  transform: translateY(-26rem);
-  margin-inline: 33.5rem;
+  transform: translateY(-26.5rem);
+  margin-inline: 33.4rem;
   font-size: 24px;
 }
 /* Chrome, Edge, and Safari */
@@ -229,7 +229,7 @@ textarea:-moz-autofill {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 999;
-  margin-top: 6.25rem;
+  margin-top: 3rem;
   width: 22rem;
   height: 20rem;
   align-self: center;
@@ -267,8 +267,8 @@ textarea:-moz-autofill {
   .slogan {
   position: absolute;
   white-space: nowrap;
-  transform: translateY(-26rem);
-  margin-inline: 12rem;
+  transform: translateY(-26.5rem);
+  margin-inline: 11.7rem;
   font-size: 24px;
 }
   .flex-container {
@@ -374,6 +374,10 @@ textarea:-moz-autofill {
   .row-inputs {
     margin-inline: 12.7rem 0;
   }
+  .slogan {
+ transform: translateY(-26.3rem);
+  }
+  
   .text,
   .nowrap,
   .regards {

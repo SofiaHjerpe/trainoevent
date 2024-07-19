@@ -54,7 +54,7 @@ export function FormItem(): ReactElement {
         <span className="logo"></span>
         <strong className="smallheading slogan">Hitta din personliga tränare</strong>
 
-      <p className="text" style={{ marginTop: "-8rem" }}>
+      <p className="text" style={{ marginTop: "-10rem" }}>
         Hej alla tränare och träningsentusiaster! Vi är glada att kunna välkomna
         er till Traino Triathlon den 16 augusti 2025. Oavsett om du är en
         erfaren triathlet eller nybörjare, så finns det något för alla i vårt
