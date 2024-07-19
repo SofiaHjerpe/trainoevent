@@ -264,7 +264,9 @@ textarea:-moz-autofill {
   .nowrap {
     font-size: 1rem;
   }
- 
+ .row-inputs {
+    margin-inline: 12.2rem 0;
+}
   
   .width {
     white-space: normal;
@@ -345,6 +347,9 @@ textarea:-moz-autofill {
   .padding {
     transform: translateY(-2rem);
   }
+   .row-inputs {
+    margin-inline: 12.7rem 0;
+
   .text,
   .nowrap,
   .regards {
