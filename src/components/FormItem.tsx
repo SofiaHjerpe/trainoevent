@@ -101,7 +101,7 @@ export function FormItem(): ReactElement {
               <textarea
                 onChange={(event) => setDetails(event.target.value)}
                 className="addItem author"
-                placeholder="Övrig information"
+                placeholder="Övrig information(allergier/ handikapp)"
               ></textarea>
             </div>
             <button
