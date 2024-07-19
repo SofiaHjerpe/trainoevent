@@ -11,6 +11,7 @@ import { IForm } from "../interfaces";
 import { v4 as uuidv4 } from "uuid";
 import { useRef, useCallback } from "react";
 import SavedPopUp from "./SavedPopup";
+import Video from "./Video";
 
 export function FormItem(): ReactElement {
   const { addTodoToList, logSavedUsers } = useContext(FormContext);
@@ -19,7 +20,6 @@ export function FormItem(): ReactElement {
   const [email, setEmail] = useState("");
   const [details, setDetails] = useState("");
   const [popUp, setPopUp] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
   const handleOnSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const newItem: IForm = {
@@ -39,40 +39,17 @@ export function FormItem(): ReactElement {
   };
   logSavedUsers();
 
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (!playerRef.current.play()) {
+    if (playerRef.current !== null) {
       playerRef.current.play();
     }
-     playerRef.current.play();
-
   }, []);
- 
+
   return (
     <div className="page-container">
-      <div className="video">
-        <video
-          width="100%"
-          height="100%"
-          ref={playerRef}
-          autoPlay={true}
-          muted={true}
-          onPause={() => setIsPlaying(true)}
-          loop={true}
-          playsInline={true}
-        >
-          <source
-            src="https://traino.nu/app/assets/bg800.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://traino.nu/app/assets/bg800.webp"
-            type="video/webp"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <Video playerRef={playerRef} /> 
       <h1 className="main-heading">TRAINO TRIATHON </h1>
       <p className="text">
         Hej alla tränare och träningsentusiaster! Vi är glada att kunna välkomna
