@@ -172,6 +172,7 @@ input:-webkit-autofill:focus {
   color: black !important;
 }
 .slogan {
+  display: block;
   position: absolute;
   transform: translateY(-26.5rem);
   margin-inline: 33.4rem;
@@ -265,12 +266,13 @@ textarea:-moz-autofill {
     width: 43.8rem;
   }
   .slogan {
-  position: absolute;
-  white-space: nowrap;
-  transform: translateY(-26.5rem);
-  margin-inline: 11.7rem;
-  font-size: 24px;
-}
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    transform: translateY(-26.5rem);
+    margin-inline: 11.7rem;
+    font-size: 24px;
+  }
   .flex-container {
     flex-direction: column;
     width: 13.3rem;
@@ -375,9 +377,10 @@ textarea:-moz-autofill {
     margin-inline: 12.7rem 0;
   }
   .slogan {
- transform: translateY(-26.3rem);
+    display: none;
+    transform: translateY(-26.3rem);
   }
-  
+
   .text,
   .nowrap,
   .regards {
